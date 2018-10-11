@@ -11,14 +11,17 @@ import UIKit
 
 class SignUpBirthdayViewController: UIViewController {
 
+    @IBOutlet var signUpBirthdayVCnextBtn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let signUpBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signUpBtnTapped(sender:)))
-        self.signUpBtn.addGestureRecognizer(signUpBtnTapGestureRecognizer)
-        self.signUpBtn.isUserInteractionEnabled = true
-        
-        
+   
+        let signUpBirthdayVCnextBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signUpBirthdayVCnextBtnTapped(sender:)))
+        self.signUpBirthdayVCnextBtn.addGestureRecognizer(signUpBirthdayVCnextBtnTapGestureRecognizer)
+        self.signUpBirthdayVCnextBtn.isUserInteractionEnabled = true
+    }
+    
+    @IBAction func signUpBirthdayVCnextBtnTapped (sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "toSignUpGender", sender: nil)
     }
 }
