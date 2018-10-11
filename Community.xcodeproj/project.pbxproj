@@ -12,7 +12,8 @@
 		3D582555216CC38700EC2A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D582553216CC38700EC2A0E /* Main.storyboard */; };
 		3D582557216CC38800EC2A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D582556216CC38800EC2A0E /* Assets.xcassets */; };
 		3D58255A216CC38800EC2A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D582558216CC38800EC2A0E /* LaunchScreen.storyboard */; };
-		3DD5FE4E216E4D24008473F6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5FE4D216E4D24008473F6 /* SignUpViewController.swift */; };
+		3D7D58F2216EDBAE006B548E /* SignUpBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */; };
+		3DD5FE4E216E4D24008473F6 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5FE4D216E4D24008473F6 /* SignUpNameViewController.swift */; };
 		8A4D24B18403227E98FF42BA /* Pods_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068FECAA6EFCD754909980AD /* Pods_Community.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,8 @@
 		3D582556216CC38800EC2A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D582559216CC38800EC2A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D58255B216CC38800EC2A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DD5FE4D216E4D24008473F6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBirthdayViewController.swift; sourceTree = "<group>"; };
+		3DD5FE4D216E4D24008473F6 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		9F52565E9120CC6CC59E58A9 /* Pods-Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Community.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Community/Pods-Community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +76,8 @@
 			children = (
 				3D58254F216CC38700EC2A0E /* AppDelegate.swift */,
 				3D582551216CC38700EC2A0E /* ViewController.swift */,
-				3DD5FE4D216E4D24008473F6 /* SignUpViewController.swift */,
+				3DD5FE4D216E4D24008473F6 /* SignUpNameViewController.swift */,
+				3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */,
 				3D582553216CC38700EC2A0E /* Main.storyboard */,
 				3D582556216CC38800EC2A0E /* Assets.xcassets */,
 				3D582558216CC38800EC2A0E /* LaunchScreen.storyboard */,
@@ -168,10 +171,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Community/Pods-Community-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
+				"${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/McPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -204,7 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D582552216CC38700EC2A0E /* ViewController.swift in Sources */,
-				3DD5FE4E216E4D24008473F6 /* SignUpViewController.swift in Sources */,
+				3D7D58F2216EDBAE006B548E /* SignUpBirthdayViewController.swift in Sources */,
+				3DD5FE4E216E4D24008473F6 /* SignUpNameViewController.swift in Sources */,
 				3D582550216CC38700EC2A0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
