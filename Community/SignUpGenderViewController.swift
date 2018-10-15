@@ -21,6 +21,6 @@ class SignUpGenderViewController: UIViewController {
     }
     
     @IBAction func signUpGenderVCnextBtnTapped (sender: UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "toSignUpEmailAddress", sender: nil)
+        self.performSegue(withIdentifier: "toSignUpName", sender: nil)
     }
 }

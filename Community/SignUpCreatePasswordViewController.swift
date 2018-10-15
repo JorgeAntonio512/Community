@@ -7,3 +7,24 @@
 //
 
 import Foundation
+import UIKit
+
+class SignUpCreatePasswordViewController: UIViewController {
+
+
+    @IBOutlet var signUpCreatePasswordVCnextBtn: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        let signUpCreatePasswordVCnextBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signUpCreatePasswordVCnextBtnTapped(sender:)))
+        self.signUpCreatePasswordVCnextBtn.addGestureRecognizer(signUpCreatePasswordVCnextBtnTapGestureRecognizer)
+        self.signUpCreatePasswordVCnextBtn.isUserInteractionEnabled = true
+    }
+    
+    @IBAction func signUpCreatePasswordVCnextBtnTapped(sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "toHomeFromSignUp", sender: nil)
+    }
+    
+}

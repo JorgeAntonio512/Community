@@ -13,6 +13,7 @@
 		3D582557216CC38800EC2A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D582556216CC38800EC2A0E /* Assets.xcassets */; };
 		3D58255A216CC38800EC2A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D582558216CC38800EC2A0E /* LaunchScreen.storyboard */; };
 		3D7D58F2216EDBAE006B548E /* SignUpBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */; };
+		3DCFF7D2216FA9F700B02B39 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFF7D1216FA9F700B02B39 /* signInViewController.swift */; };
 		3DD364A5216F907700C1E8A4 /* SignUpGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD364A4216F907700C1E8A4 /* SignUpGenderViewController.swift */; };
 		3DD364A7216F90FD00C1E8A4 /* SignUpEmailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD364A6216F90FD00C1E8A4 /* SignUpEmailAddressViewController.swift */; };
 		3DD364A9216F93C700C1E8A4 /* SignUpCreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD364A8216F93C700C1E8A4 /* SignUpCreatePasswordViewController.swift */; };
@@ -31,6 +32,7 @@
 		3D582559216CC38800EC2A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D58255B216CC38800EC2A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBirthdayViewController.swift; sourceTree = "<group>"; };
+		3DCFF7D1216FA9F700B02B39 /* signInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
 		3DD364A4216F907700C1E8A4 /* SignUpGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpGenderViewController.swift; sourceTree = "<group>"; };
 		3DD364A6216F90FD00C1E8A4 /* SignUpEmailAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailAddressViewController.swift; sourceTree = "<group>"; };
 		3DD364A8216F93C700C1E8A4 /* SignUpCreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCreatePasswordViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +84,12 @@
 			children = (
 				3D58254F216CC38700EC2A0E /* AppDelegate.swift */,
 				3D582551216CC38700EC2A0E /* ViewController.swift */,
+				3DD364A4216F907700C1E8A4 /* SignUpGenderViewController.swift */,
 				3DD5FE4D216E4D24008473F6 /* SignUpNameViewController.swift */,
 				3D7D58F1216EDBAE006B548E /* SignUpBirthdayViewController.swift */,
-				3DD364A4216F907700C1E8A4 /* SignUpGenderViewController.swift */,
 				3DD364A6216F90FD00C1E8A4 /* SignUpEmailAddressViewController.swift */,
 				3DD364A8216F93C700C1E8A4 /* SignUpCreatePasswordViewController.swift */,
+				3DCFF7D1216FA9F700B02B39 /* signInViewController.swift */,
 				3D582553216CC38700EC2A0E /* Main.storyboard */,
 				3D582556216CC38800EC2A0E /* Assets.xcassets */,
 				3D582558216CC38800EC2A0E /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 				3D582552216CC38700EC2A0E /* ViewController.swift in Sources */,
 				3D7D58F2216EDBAE006B548E /* SignUpBirthdayViewController.swift in Sources */,
 				3DD364A7216F90FD00C1E8A4 /* SignUpEmailAddressViewController.swift in Sources */,
+				3DCFF7D2216FA9F700B02B39 /* signInViewController.swift in Sources */,
 				3DD5FE4E216E4D24008473F6 /* SignUpNameViewController.swift in Sources */,
 				3D582550216CC38700EC2A0E /* AppDelegate.swift in Sources */,
 				3DD364A5216F907700C1E8A4 /* SignUpGenderViewController.swift in Sources */,

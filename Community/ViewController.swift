@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func signUpBtnTapped(sender:UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "segueToSignUp", sender: nil)
+        self.performSegue(withIdentifier: "toSignUpGender", sender: nil)
     }
 }
 
