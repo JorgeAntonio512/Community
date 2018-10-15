@@ -317,7 +317,7 @@
             </objects>
             <point key="canvasLocation" x="4189.6000000000004" y="-223.53823088455775"/>
         </scene>
-        <!--Item 2-->
+        <!--groups-->
         <scene sceneID="Mah-q2-pIA">
             <objects>
                 <viewController id="qqV-cb-NP2" sceneMemberID="viewController">
@@ -327,13 +327,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KIu-VS-niF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="EM6-2E-iZl"/>
+                    <tabBarItem key="tabBarItem" title="groups" image="groups" id="EM6-2E-iZl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVJ-mY-ueh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6455" y="-549"/>
         </scene>
-        <!--Item 1-->
+        <!--home-->
         <scene sceneID="7iy-iw-qcR">
             <objects>
                 <viewController id="fYG-V5-ABz" sceneMemberID="viewController">
@@ -343,7 +343,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ynl-lD-fmx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="JeH-N4-zhQ"/>
+                    <tabBarItem key="tabBarItem" title="home" image="home" id="JeH-N4-zhQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUc-PS-4iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,6 +422,8 @@
     <resources>
         <image name="Community" width="227" height="52"/>
         <image name="female_silhouette" width="1920" height="1080"/>
+        <image name="groups" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
         <image name="male_silhouette" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
