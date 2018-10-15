@@ -370,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="5511" y="124"/>
         </scene>
-        <!--Item-->
+        <!--events-->
         <scene sceneID="asN-ZC-ArE">
             <objects>
                 <viewController id="0ia-br-mye" sceneMemberID="viewController">
@@ -380,13 +380,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0CY-Wd-RU1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="As8-Su-RKV"/>
+                    <tabBarItem key="tabBarItem" title="events" image="mapMarker-1" id="As8-Su-RKV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIA-FY-zt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6441" y="119"/>
         </scene>
-        <!--Item-->
+        <!--notifications-->
         <scene sceneID="lBK-jK-6UZ">
             <objects>
                 <viewController id="XAT-BU-rgh" sceneMemberID="viewController">
@@ -396,7 +396,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="woN-jn-Rqa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="J27-te-749"/>
+                    <tabBarItem key="tabBarItem" title="notifications" image="notifications" id="J27-te-749"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPH-f4-v6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -425,6 +425,8 @@
         <image name="groups" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="male_silhouette" width="1920" height="1080"/>
+        <image name="mapMarker-1" width="25" height="25"/>
+        <image name="notifications" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="TuY-1O-LCy"/>
