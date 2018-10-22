@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var signUpBtn: UIView!
     
+    @IBOutlet var signInBtn: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +22,19 @@ class ViewController: UIViewController {
         self.signUpBtn.addGestureRecognizer(signUpBtnTapGestureRecognizer)
         self.signUpBtn.isUserInteractionEnabled = true
     
+        let signInBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signInBtnTapped(sender:)))
+        self.signInBtn.addGestureRecognizer(signInBtnTapGestureRecognizer)
+        self.signInBtn.isUserInteractionEnabled = true
     
     }
 
     
     @IBAction func signUpBtnTapped(sender:UITapGestureRecognizer) {
         self.performSegue(withIdentifier: "toSignUpGender", sender: nil)
+    }
+    
+    @IBAction func signInBtnTapped(sender:UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "toSignIn", sender: nil)
     }
 }
 

@@ -67,8 +67,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="oMt-jd-m2b"/>
                     <connections>
+                        <outlet property="signInBtn" destination="tpw-qu-qvw" id="Dff-aR-6Vi"/>
                         <outlet property="signUpBtn" destination="fVI-ci-o7C" id="T6d-wb-HUw"/>
-                        <segue destination="mwT-gO-hDs" kind="show" id="kSm-8y-JlH"/>
+                        <segue destination="mwT-gO-hDs" kind="show" identifier="toSignIn" id="kSm-8y-JlH"/>
                         <segue destination="4lf-Qi-3MP" kind="show" identifier="toSignUpGender" id="Xvi-AL-dqo"/>
                     </connections>
                 </viewController>
@@ -220,16 +221,62 @@
                     <view key="view" contentMode="scaleToFill" id="Oz7-Jz-Uu1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITJ-ec-Ch5">
+                                <rect key="frame" x="97" y="88" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-PA-bQQ">
+                                <rect key="frame" x="97" y="158" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULY-WT-upT" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="67" y="217" width="240" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Log In"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-Jq-QqN">
+                                <rect key="frame" x="126" y="291" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forgot Password?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-qz-3yy">
+                                <rect key="frame" x="170" y="329" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHb-Qp-gib" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="16" y="605" width="343" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Create New Account"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bdu-Yk-Hb6"/>
                     </view>
                     <connections>
-                        <segue destination="Gbu-pO-br5" kind="show" id="GF5-Tf-Qb4"/>
+                        <outlet property="createNewAccount" destination="uHb-Qp-gib" id="xf2-k2-MoI"/>
+                        <outlet property="logInBtn" destination="ULY-WT-upT" id="n7u-Aw-7HN"/>
+                        <segue destination="Gbu-pO-br5" kind="show" identifier="toHomeFromSignIn" id="GF5-Tf-Qb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haX-Xl-Csd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566" y="553"/>
+            <point key="canvasLocation" x="2565.5999999999999" y="552.77361319340332"/>
         </scene>
         <!--Sign Up Email Address View Controller-->
         <scene sceneID="ugW-wH-mad">
@@ -402,7 +449,7 @@
             </objects>
             <point key="canvasLocation" x="6441" y="811"/>
         </scene>
-        <!--Item-->
+        <!--more-->
         <scene sceneID="Kgd-HL-USL">
             <objects>
                 <viewController id="pkH-SU-sGd" sceneMemberID="viewController">
@@ -412,7 +459,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OJE-wO-bgq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vTu-xQ-Hfh"/>
+                    <tabBarItem key="tabBarItem" title="more" image="MOARMENU-1" id="vTu-xQ-Hfh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dsn-hK-FvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,6 +468,7 @@
     </scenes>
     <resources>
         <image name="Community" width="227" height="52"/>
+        <image name="MOARMENU-1" width="25" height="25"/>
         <image name="female_silhouette" width="1920" height="1080"/>
         <image name="groups" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
@@ -429,6 +477,6 @@
         <image name="notifications" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TuY-1O-LCy"/>
+        <segue reference="GF5-Tf-Qb4"/>
     </inferredMetricsTieBreakers>
 </document>
