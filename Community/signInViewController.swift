@@ -22,9 +22,17 @@ class signInViewController: UIViewController {
         self.logInBtn.addGestureRecognizer(logInBtnTapGestureRecognizer)
         self.logInBtn.isUserInteractionEnabled = true
         
-        let signInBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signInBtnTapped(sender:)))
-        self.signInBtn.addGestureRecognizer(signInBtnTapGestureRecognizer)
-        self.signInBtn.isUserInteractionEnabled = true
+        let createNewAccountTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(createNewAccountTapped(sender:)))
+        self.createNewAccount.addGestureRecognizer(createNewAccountTapGestureRecognizer)
+        self.createNewAccount.isUserInteractionEnabled = true
+        
+    }
+    
+    @IBAction func logInBtnTapped(sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "toHomeFromSignIn", sender: nil)
+    }
+    
+    @IBAction func createNewAccountTapped(sender: UITapGestureRecognizer) {
         
     }
 }
