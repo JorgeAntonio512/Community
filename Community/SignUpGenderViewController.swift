@@ -11,6 +11,9 @@ import UIKit
 
 class SignUpGenderViewController: UIViewController {
     @IBOutlet var signUpGenderVCnextBtn: UIView!
+    
+    @IBOutlet var signInFromGender: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,9 +21,17 @@ class SignUpGenderViewController: UIViewController {
         let signUpGenderVCnextBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signUpGenderVCnextBtnTapped(sender:)))
         self.signUpGenderVCnextBtn.addGestureRecognizer(signUpGenderVCnextBtnTapGestureRecognizer)
         self.signUpGenderVCnextBtn.isUserInteractionEnabled = true
+        
+        let signInFromGenderBtnTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signInFromGenderBtnTapped(sender:)))
+        self.signInFromGender.addGestureRecognizer(signInFromGenderBtnTapGestureRecognizer)
+        self.signInFromGender.isUserInteractionEnabled = true
     }
     
     @IBAction func signUpGenderVCnextBtnTapped (sender: UITapGestureRecognizer) {
         self.performSegue(withIdentifier: "toSignUpName", sender: nil)
+    }
+    
+    @IBAction func signInFromGenderBtnTapped (sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "fromGenderToSignIn", sender: nil)
     }
 }

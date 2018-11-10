@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -240,13 +240,37 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R7s-XW-7Al" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="67" y="600" width="240" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Sign In"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-fF-6N5">
+                                <rect key="frame" x="89" y="571" width="196" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pfA-n1-MIx"/>
                     </view>
                     <connections>
+                        <outlet property="signInFromGender" destination="R7s-XW-7Al" id="KC4-ez-Tve"/>
                         <outlet property="signUpGenderVCnextBtn" destination="gZO-Fi-Yul" id="XcJ-rN-0MP"/>
                         <segue destination="tne-7K-3Zy" kind="show" identifier="toSignUpName" id="9MH-c9-oWr"/>
+                        <segue destination="mwT-gO-hDs" kind="show" identifier="fromGenderToSignIn" id="M0F-zx-B9s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEC-ws-ZWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,6 +353,7 @@
                         <outlet property="createNewAccount" destination="uHb-Qp-gib" id="xf2-k2-MoI"/>
                         <outlet property="logInBtn" destination="ULY-WT-upT" id="n7u-Aw-7HN"/>
                         <segue destination="Gbu-pO-br5" kind="show" identifier="toHomeFromSignIn" id="GF5-Tf-Qb4"/>
+                        <segue destination="4lf-Qi-3MP" kind="show" identifier="toSignUpFromSignIn" id="byO-T6-O84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haX-Xl-Csd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -561,5 +586,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GF5-Tf-Qb4"/>
+        <segue reference="M0F-zx-B9s"/>
+        <segue reference="byO-T6-O84"/>
     </inferredMetricsTieBreakers>
 </document>

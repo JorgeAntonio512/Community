@@ -33,6 +33,6 @@ class signInViewController: UIViewController {
     }
     
     @IBAction func createNewAccountTapped(sender: UITapGestureRecognizer) {
-        
+        performSegue(withIdentifier: "toSignUpFromSignIn", sender: nil)
     }
 }
